@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Midias em HTML</title>
+    </head>
+    <body>
+        <h1>Imagens flexíveis</h1>
+        <p>Estou adorando a linguagem HTML, olha essas imagens flexíveis que TOPPP &downarrow;</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+            <source media="(max-width: 1055px)" srcset="images/foto-m.png" type="image/png">
+            <img src="images/foto-g.png" alt="Imagem grande">
+        </picture>
+        <h1>Reproduzindo áudios</h1>
+        <ul>
+            <li>Guanacast</li>
+            <li><audio src="midia/guanacast-33.mp3" controls></audio></li>
+            <li>Música</li>
+            <li><audio src="midia/ice-e-fire.mp3" controls></audio></li>
+        </ul>
+    </body>
+</html>
