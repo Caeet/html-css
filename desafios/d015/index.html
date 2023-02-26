@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Mídias</title>
+        <style>
+            body {
+                background-image: url('imagens/fundo-madeira.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            main#iphone{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            main > div#conteudo {
+                width: 273px;
+                height: 480px;
+                position: absolute;
+                top: 12%;
+                left: 6%;
+            }
+
+            div#conteudo > iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+            section {
+                width: 100px;
+                height: 600px;
+                position: absolute;
+                top: 0%;
+                left: 85%;
+                margin: auto;
+            }
+
+            .diminuir{
+                width: 50%;
+                margin: 10px;
+                height: auto;
+                border-radius: 100px;
+            }
+
+            section > nav > img:hover {
+                border: 2px solid orange;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="iphone">
+            <img src="imagens/frame-iphone.png">
+            <div id="conteudo">
+                <iframe src="pages/home.html" frameborder="0" name="iframe-show"></iframe>
+            </div>
+        </main>
+        <section>
+            <nav>
+                <a href="pages/home.html" target="iframe-show" class="diminuir"><img src="imagens/logo-home.jpg"></a>
+                <a href="pages/youtube.html" target="iframe-show" class="diminuir"><img src="imagens/logo-youtube.jpg"></a>
+                <a href="" target="iframe-show" class="diminuir"><img src="imagens/logo-github.jpg"></a>
+                <a href="" target="iframe-show" class="diminuir"><img src="imagens/logo-instagram.jpg"></a>
+                <a href="" target="iframe-show" class="diminuir"><img src="imagens/logo-twitter.jpg"></a>
+                <a href="" target="iframe-show" class="diminuir"><img src="imagens/logo-facebook.jpg"></a>
+            </nav>
+        </section>
+    </body>
+</html>
